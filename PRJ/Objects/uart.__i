@@ -1,0 +1,6 @@
+-c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I ..\CORE -I ..\DEVICE -I ..\LIB\inc -I ..\SYSTEM -I ..\UCOS-II\CONFIG -I ..\UCOS-II\CORE -I ..\UCOS-II\PORT -I ..\USER -I ..\DEVICE\LCD -I ..\PROTOCOL -I ..\DEVICE\TOUCH
+-IF:\MY_DATE\Innovation_Project_Yang\PRJ\RTE
+-IF:\Keil_5.14\Loaded_521\ARM\PACK\Keil\STM32F4xx_DFP\2.10.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+-IF:\Keil_5.14\Loaded_521\ARM\CMSIS\Include
+-D__UVISION_VERSION="521" -DSTM32F407xx -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER --C99
+-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d "..\SYSTEM\uart.c"
